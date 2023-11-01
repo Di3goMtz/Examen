@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class SegundaVistaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_segundavista);
 
-        Button btLogin = findViewById(R.id.btnIniciar);
-        btLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+        Button btBack = findViewById(R.id.buttonBack);
+        btBack.setOnClickListener(v -> {
+            Intent intent = new Intent(SegundaVistaActivity.this, MenuActivity.class);
             startActivity(intent);
         });
     }

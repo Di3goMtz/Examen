@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvInicioNombre"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/etInicioEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivInicioLogo"/>
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/etInicioContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

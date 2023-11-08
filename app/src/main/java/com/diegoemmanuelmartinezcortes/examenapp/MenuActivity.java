@@ -2,6 +2,7 @@ package com.diegoemmanuelmartinezcortes.examenapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -13,7 +14,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Button btFist = findViewById(R.id.button);
+        Button btFist = findViewById(R.id.buttonBsqRuta);
         btFist.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, PrimerVistaActivity.class);
             startActivity(intent);
@@ -27,7 +28,7 @@ public class MenuActivity extends AppCompatActivity {
 
         });
 
-        Button btThree = findViewById(R.id.button);
+        Button btThree = findViewById(R.id.buttonVerPerfil);
         btThree.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, TercerVistaActivity.class);
             startActivity(intent);

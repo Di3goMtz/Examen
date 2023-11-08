@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.diegoemmanuelmartinezcortes.examenapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.diegoemmanuelmartinezcortes.examenapp"
@@ -26,6 +26,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildToolsVersion = "30.0.3"
+    ndkVersion = "21.3.6528147"
 }
 
 dependencies {

@@ -14,7 +14,7 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="30dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvInicioNombre"
@@ -50,7 +50,8 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivInicioLogo"/>
+        app:layout_constraintTop_toBottomOf="@+id/ivInicioLogo"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/etInicioContraseña"
@@ -65,7 +66,9 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etInicioEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etInicioEmail"
+        android:minHeight="48dp" />
+
 
     <Button
         android:id="@+id/btnIniciar"
